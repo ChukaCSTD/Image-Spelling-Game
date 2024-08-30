@@ -1,4 +1,5 @@
 //Word and Hints Object
+//Might be for slightly advanced kids (._.)
 const options = {
   aroma: "images/aroma.png",
   pepper: "images/pepper.png",
@@ -139,7 +140,7 @@ const init = () => {
       let charArray = randomWord.toUpperCase().split("");
       let inputSpace = document.getElementsByClassName("inputSpace");
 
-      //If array contains clicked value replace the matched Dash with Letter
+      //If array contains clicked value, replace the dash with the Letter
       if (charArray.includes(button.innerText)) {
         charArray.forEach((char, index) => {
           //If character in array is same as clicked button
