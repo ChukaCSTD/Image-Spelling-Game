@@ -153,7 +153,7 @@ const init = () => {
             correctLetters.push(char);
             //If winCount equals word length
             if (winCount == charArray.length) {
-              resultText.innerHTML = "You Win";
+              resultText.innerHTML = "You Guessed Correctly";
               startBtn.innerText = "Continue";
               //block all buttons
               blocker();
