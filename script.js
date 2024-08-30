@@ -145,9 +145,9 @@ const init = () => {
           //If character in array is same as clicked button
           if (char === button.innerText) {
             button.classList.add("correct");
-            //Replace dash with letter
+            //Replaceing the dash with the user's letter input
             inputSpace[index].innerText = char;
-            //increment counter
+
             winCount += 1;
             correctLetters.push(char);
             //If winCount equals word length
@@ -160,7 +160,7 @@ const init = () => {
           }
         });
       } else {
-        //lose count
+        //for failed attempts by decreasing the chances counter
         button.classList.add("incorrect");
         lossCount -= 1;
         incorrectLetters.push(button.innerText);
@@ -173,17 +173,14 @@ const init = () => {
           startTimer();
         }
         if (lossCount == 0) {
-          //word.innerHTML = `The word was: <span>${randomWord}</span>`;
           resultText.innerHTML = "Game Over";
           blocker();
         }
       }
 
-      //Disable clicked buttons
       button.disabled = true;
     });
 
-    //Append generated buttons to the letters container
     letterContainer.appendChild(button);
   }
 };
