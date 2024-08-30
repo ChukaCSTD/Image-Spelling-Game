@@ -88,7 +88,6 @@ const startTimer = () => {
     timer = setInterval(() => {
       if (timeLeft <= 0) {
         clearInterval(timer);
-        //word.innerHTML = `The word was: <span>${randomWord}</span>`;
         resultText.innerHTML = "Time's up! Game Over";
         blocker();
       } else {
@@ -129,8 +128,6 @@ const init = () => {
   for (let i = 65; i < 91; i++) {
     let button = document.createElement("button");
     button.classList.add("letters");
-
-    //Convert to string
     button.innerText = String.fromCharCode(i);
 
     //Character button onclick
@@ -153,7 +150,7 @@ const init = () => {
             correctLetters.push(char);
             //If winCount equals word length
             if (winCount == charArray.length) {
-              resultText.innerHTML = "You Guessed Correctly";
+              resultText.innerHTML = "You Guessed Correctly!";
               startBtn.innerText = "Continue";
               //block all buttons
               blocker();
@@ -161,7 +158,7 @@ const init = () => {
           }
         });
       } else {
-        //for failed attempts by decreasing the chances counter
+        //Decreasing the 'chances left' counter
         button.classList.add("incorrect");
         lossCount -= 1;
         incorrectLetters.push(button.innerText);
