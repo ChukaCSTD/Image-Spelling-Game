@@ -16,10 +16,10 @@ const options = {
 
 //Initial References
 const message = document.getElementById("message");
-const hintRef = document.querySelector(".hint-ref");
+const hintRef = document.querySelector(".ImageHint");
 const controls = document.querySelector(".controls-container");
 const startBtn = document.getElementById("start");
-const letterContainer = document.getElementById("letter-container");
+const letterContainer = document.getElementById("keyboard");
 const userInpSection = document.getElementById("user-input-section");
 const resultText = document.getElementById("result");
 const word = document.getElementById("word");

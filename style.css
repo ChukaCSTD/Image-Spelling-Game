@@ -7,7 +7,7 @@
   body {
     background-color: #7786f5;
   }
-  .wrapper {
+  .card-container {
     width: 90%;
     max-width: 37em;
     background-color: #ffffff;
@@ -39,14 +39,14 @@
     border-radius: 2em;
     cursor: pointer;
   }
-  #letter-container {
+  #keyboard {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8em 0.4em;
     justify-content: center;
     margin-top: 2em;
   }
-  #letter-container button {
+  #keyboard button {
     background-color: #ffffff;
     border: 2px solid #7786f5;
     color: #7786f5;
@@ -56,20 +56,20 @@
     height: 3em;
     width: 3em;
   }
-  #letter-container .correct {
+  #keyboard .correct {
     background-color: #008000;
     color: #ffffff;
     border: 2px solid #008000;
   }
-  #letter-container .incorrect {
+  #keyboard .incorrect {
     background-color: #8a8686;
     color: #ffffff;
     border: 2px solid #8a8686;
   }
-  .hint-ref {
+  .ImageHint {
     margin-bottom: 1em;
   }
-  .hint-ref span {
+  .ImageHint span {
     font-weight: 600;
   }
   #chanceCount {
